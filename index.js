@@ -1,3 +1,5 @@
+import { mongo } from 'mongoose';
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
@@ -8,6 +10,7 @@ require('./models/User');
 require('./models/Survey');
 require('./services/passport');
 
+mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
 
 const app = express();
