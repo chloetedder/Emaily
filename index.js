@@ -1,5 +1,3 @@
-import { mongo } from 'mongoose';
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
