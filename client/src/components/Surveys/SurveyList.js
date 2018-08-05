@@ -10,7 +10,7 @@ class SurveyList extends Component {
     renderSurveys() {
         return this.props.surveys.reverse().map(survey => {
             return (
-                <div className="card grey" key={survey._id}>
+                <div className="card" key={survey._id}>
                     <div className="card-content">
                         <span className="card-title">{survey.title}</span>
                         <p>
